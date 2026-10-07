@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-[#080a0f]">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+<style type="text/tailwindcss">
+  @theme {
+    --font-sans: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --color-zot-bg: oklch(0.145 0 0);
+    --color-zot-panel: oklch(0.205 0 0);
+    --color-zot-panel-2: oklch(0.269 0 0);
+    --color-zot-border: oklch(1 0 0 / 10%);
+    --color-zot-text: oklch(0.985 0 0);
+    --color-zot-muted: oklch(0.708 0 0);
+    --color-zot-accent: oklch(0.8374 0.1129 222.74);
+    --color-zot-good: #c3e88d;
+    --color-zot-warn: #ffcb6b;
+    --color-zot-bad: oklch(0.704 0.191 22.216);
+  }
+</style>
+<style>
+  html, body, #root { width: 100%; height: 100%; overflow: hidden; }
+  body { margin: 0; background: oklch(0.145 0 0); color: oklch(0.985 0 0); font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  * { box-sizing: border-box; }
+  .scrollbar-thin::-webkit-scrollbar { width: 10px; height: 10px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { background: #273044; border-radius: 999px; border: 3px solid #101622; }
+  .scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+  .code-font { font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  .code-line { color: #d6deeb; }
+  .code-line .hljs-comment, .code-line .hljs-quote { color: #697098; font-style: italic; }
+  .code-line .hljs-keyword, .code-line .hljs-selector-tag, .code-line .hljs-literal, .code-line .hljs-doctag, .code-line .hljs-meta .hljs-keyword { color: #c792ea; }
+  .code-line .hljs-string, .code-line .hljs-regexp, .code-line .hljs-addition, .code-line .hljs-template-tag { color: #c3e88d; }
+  .code-line .hljs-number, .code-line .hljs-symbol, .code-line .hljs-bullet, .code-line .hljs-link { color: #f78c6c; }
+  .code-line .hljs-title, .code-line .hljs-title.function_, .code-line .hljs-section { color: #82aaff; }
+  .code-line .hljs-title.class_, .code-line .hljs-type, .code-line .hljs-built_in { color: #ffcb6b; }
+  .code-line .hljs-variable, .code-line .hljs-template-variable, .code-line .hljs-attr, .code-line .hljs-property, .code-line .hljs-name, .code-line .hljs-selector-class, .code-line .hljs-selector-id, .code-line .hljs-selector-attr, .code-line .hljs-selector-pseudo { color: #f07178; }
+  .code-line .hljs-tag, .code-line .hljs-meta, .code-line .hljs-punctuation, .code-line .hljs-operator { color: #89ddff; }
+  .code-line .hljs-deletion { color: #ff5370; }
+  .code-line .hljs-emphasis { font-style: italic; }
+  .code-line .hljs-strong { font-weight: 700; }
+  .diff-removed { background: rgba(255, 83, 112, 0.14); }
+  .diff-added { background: rgba(195, 232, 141, 0.12); }
+  .diff-filler { background: repeating-linear-gradient(135deg, transparent 0 6px, rgba(255, 255, 255, 0.025) 6px 12px); }
+</style>
+</head>
+<body class="h-full overflow-hidden bg-zot-bg text-zot-text antialiased">
+<div id="root"></div>
+<script id="review-data" type="application/json">__INLINE_DATA__</script>
+<script>
+__BRIDGE_JS__
+</script>
+<script>
+__INLINE_JS__
+</script>
+</body>
+</html>

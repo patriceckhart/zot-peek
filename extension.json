@@ -1,0 +1,9 @@
+{
+  "name": "zot-peek",
+  "version": "1.0.0",
+  "exec": "./index.ts",
+  "args": [],
+  "language": "typescript",
+  "description": "Open a review window for repository changes",
+  "enabled": true
+}
